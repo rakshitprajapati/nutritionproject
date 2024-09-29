@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Details</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container1">
+        <div class="header">
+            <div class="avatar"></div>
+        </div>
+        <h1>Fill Your Details</h1>
+        <form action="result.html" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="" disabled selected>gender</option>
+                        <option value="male" class="purple-option">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="daily-sleep">Daily sleep</label>
+                    <input type="text" id="daily-sleep" name="daily-sleep" placeholder="8 Hour">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="height">Height</label>
+                    <input type="text" id="height" name="height" placeholder="Height">
+                </div>
+                <div class="form-group">
+                    <label for="food-allergies">Any food Allergies?</label>
+                    <input type="text" id="food-allergies" name="food-allergies" placeholder="Egg">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="activity-lavel">Activity Level</label>
+                    <select id="activity-lavel" name="activity-lavel">
+                        <option value="" disabled selected>inactive</option>
+                        <option value="light" class="purple-option">Light</option>
+                        <option value="moderate">Moderate</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dietary-restriction">Any Dietary Restriction?</label>
+                    <input type="text" id="dietary-restriction" name="dietary-restriction" placeholder="Vegan">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="goal">Goal</label>
+                    <input type="text" id="goal" name="goal" placeholder="80 kg">
+                </div>
+                <div class="form-group">
+                    <label for="budget">Set Budget in Int</label>
+                    <input type="text" id="budget" name="budget" placeholder="5000/-">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn"><a href="diet-plan.html">Submit</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

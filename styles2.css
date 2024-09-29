@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F1C6A8;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styling the "Your Diet" title */
+.creative-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50; /* Solid color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+
+/* Calories box with a nice pattern */
+.calories-box {
+    background: url('https://www.transparenttextures.com/patterns/arabesque.png');
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.diet-summary {
+    text-align: center;
+}
+
+.meal-section {
+    margin-bottom: 20px;
+}
+
+.meal-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Submit button styling */
+.submit-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn a:hover {
+    background-color: #2980b9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns everything to the right */
+    align-items: center;
+    padding-right: 20px; /* Adds spacing between the icon and the edge of the page */
+}
+
+#nav-links {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background-color: #7E6B48;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#nav-links ul li {
+    padding: 15px;
+}
+
+#nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-links ul li a:hover {
+    background-color: #3D405B;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation for expanding */
+#nav-links.show {
+    display: flex;
+    animation: slide-in 0.5s ease-out forwards;
+}
